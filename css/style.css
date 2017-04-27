@@ -1,0 +1,958 @@
+
+html,body {
+    width: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 3.5em;
+}
+
+
+h2 {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1.7em;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3 div {
+    display: inline;
+    color: #f3e6ca;
+}
+
+h3 .em {
+    color: #f99947;
+    font-size: 1.8em;
+}
+
+h3 .emem {
+    font-family: 'Courgette', cursive;
+    color: #f7675c;
+    font-size: 2.2em;
+}
+
+
+h3 .non {
+    color: #313851;
+}
+
+h3 .gold {
+    font-family: 'Courgette', cursive;
+    font-size: 2.2em;
+    color: #f89a49;
+}
+
+h3 .pink {
+    color: #f7675c;
+}
+
+h4 {
+    font-weight: 200;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1.2em;
+    color: #313851;
+}
+
+h4 .emem {
+    font-family: 'Courgette', cursive;
+    color: #313851;
+    font-size: 1.7em;
+    line-height: 1.5em;
+}
+
+h5 {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+em {
+    font-family: 'Courgette', cursive;
+    color: #f7675c;
+    font-style: normal;
+}
+
+p {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+h6 {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 2.2em;
+    color: #f3e6ca;
+}
+
+#container {
+    width: auto;
+    position: relative;
+    background-color: #f3e6ca;
+    overflow: hidden;
+
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+#earth {
+    background: url(../img/earth.png) no-repeat;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 150px;
+    left: 600px;
+    -webkit-animation: rotate 20s linear infinite;
+    z-index: 10;
+}
+
+#shadowOnEarth {
+    background: url(../img/shadowOnEarth.png) no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 280px;
+    left: 780px;
+    z-index: 20;
+}
+
+@-webkit-keyframes rotate {
+    0% {-webkit-transform: rotate(0deg);}
+    50% {-webkit-transform: rotate(180deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+#shadow {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+    top: 150px;
+    left: 600px;
+    box-shadow: 20px 20px 20px grey;
+}
+
+@-webkit-keyframes car_move {
+    0% {left: 862px; top: 105px;}
+    50% {left: 860px; top: 107px;}
+    100% {left: 862px; top: 105px;}
+}
+
+#car {
+    width: 150px;
+    height: 70px;
+    background: url(../img/car.png) no-repeat;
+    position: absolute;
+    -webkit-transform: rotate(16deg);
+    -webkit-animation: car_move 0.4s linear infinite;
+    z-index: 10;
+}
+
+
+#title {
+    position: absolute;
+    line-height: 70px;
+    top: 290px;
+    left: 13%;
+    color: #313851;
+    z-index: 10;
+}
+
+
+
+#subtitle {
+    position: absolute;
+    top: 470px;
+    left: 13%;
+    color: #313851;
+}
+
+#move {
+    height: 800px;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+#planet1{
+    padding-left: 850px;
+    padding-top: 550px;
+}
+
+#cloud1 {
+    padding-left: 150px;
+    padding-top: 50px;
+}
+
+#cloud3 {
+    padding-left: 150px;
+    padding-top: 550px;
+}
+
+#planet2{
+    padding-left: 950px;
+    padding-top: 50px;
+}
+
+#star1{
+    padding-left: 400px;
+    padding-top: 600px;
+}
+
+#star2{
+    padding-left: 950px;
+    padding-top: 50px;
+}
+
+#star3{
+    padding-left: 100px;
+    padding-top: 200px;
+}
+#star4{
+    padding-left: 950px;
+    padding-top: 600px;
+}
+#star5{
+    padding-left: 50px;
+    padding-top: 550px;
+}
+#star6{
+    padding-left: 150px;
+    padding-top: 800px;
+}
+
+
+#description {
+    background: url(../img/cloud-background.png) no-repeat;
+    width: 100%;
+    height: 1600px;
+}
+
+#para1 {
+    margin-top: -420px;
+    width: 70%;
+    padding-left: 190px;
+    position: absolute;
+    display: none;
+}
+
+#para2 {
+    margin-top: 100px;
+    width: 70%;
+    margin-left: 190px;
+    position: absolute;
+    display: none;
+
+}
+
+#star7{
+    padding-left: 1100px;
+    padding-top: 600px;
+}
+
+#star8{
+    padding-left: 950px;
+    padding-top: 50px;
+}
+
+#star9{
+    padding-left: 100px;
+    padding-top: 200px;
+}
+#star10{
+    padding-left: 1150px;
+    padding-top: 900px;
+}
+#star11{
+    padding-left: 50px;
+    padding-top: 550px;
+}
+#star12{
+    padding-left: 150px;
+    padding-top: 1300px;
+}
+
+@-webkit-keyframes arrow_bounce {
+    0%, 20%, 50%, 70%, 100% {-webkit-transform: translateY(0);}
+    60% {-webkit-transform: translateY(-20px);}
+    80% {-webkit-transform: translateY(-15px);}
+}
+
+#arrow {
+    background: url(../img/gold-arrow.png);
+    width: 23px;
+    height: 45px;
+    position: absolute;
+    left: 50%;
+    top: 2100px;
+    -webkit-animation: arrow_bounce 2.5s linear infinite;
+    display: none;
+}
+
+#hint {
+    color: #f3e6ca;
+    position: absolute;
+    left: 40%;
+    top: 2010px;
+    font-size: 1.5em;
+    font-weight: 200;
+    display: none;
+}
+
+#energy {
+    height: 700px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #f8ebd9;
+    border-radius: 25px;
+    box-shadow: 10px 0px 10px grey;
+}
+
+#energy-title {
+    padding-top: 50px;
+    display: none;
+}
+
+#barrel {
+    background: url(../img/barrel.png) no-repeat;
+    width: 194px;
+    height: 246px;
+    position: absolute;
+    top: 2700px;
+    left: 200px;
+    z-index: 10;
+    display: none;
+}
+
+@-webkit-keyframes arrow_move {
+    0% {-webkit-transform: translateX(0);}
+    50% {-webkit-transform: translateX(+10px);}
+    100% {-webkit-transform: translateX(0);}
+}
+
+#extract-arrow {
+    background: url(../img/extract-arrow.png) no-repeat;
+    width: 140px;
+    height: 73px;
+    position: absolute;
+    top: 2800px;
+    left: 450px;
+    z-index: 10;
+    display: none;
+    -webkit-animation: arrow_move 2.5s easein infinite;
+}
+
+#gasoline {
+    background: url(../img/gasoline.png) no-repeat;
+    width: 139px;
+    height: 151px;
+    position: absolute;
+    top: 2790px;
+    left: 700px;
+    z-index: 10;
+    display: none;
+}
+
+#station {
+    background: url(../img/station.png) no-repeat;
+    width: 442px;
+    height: 316px;
+    position: absolute;
+    top: 2630px;
+    left: 700px;
+    z-index: 10;
+    display: none;
+}
+
+#gold-car {
+    background: url(../img/gold-car.png) no-repeat;
+    width: 280px;
+    height: 137px;
+    position: absolute;
+    top: 3200px;
+    left: 800px;
+    z-index: 10;
+    display: none;
+}
+
+#cru {
+    position: absolute;
+    top: 2970px;
+    left: 210px;
+    display: none;
+}
+
+#gas {
+    position: absolute;
+    top: 2970px;
+    left: 690px;
+    display: none;
+}
+
+.notation {
+    position: absolute;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 0.8em;
+    color: #313851;
+    display: none;
+    z-index: 30;
+}
+
+.note {
+    position: absolute;
+    width: 200px;
+    z-index: 20;
+    background-color: #313851;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    color: #f3e6ca;
+}
+
+#ann1 {
+    top: 2990px;
+    left: 62%;
+}
+
+#note1 {
+    top: 2965px;
+    left: 64%;
+}
+
+#ann2 {
+    top: 3775px;
+    left: 38%;
+}
+
+#note2 {
+    top: 3750px;
+    left: 40%;
+}
+#ann3 {
+    top: 3965px;
+    left: 43.5%;
+}
+
+#note3 {
+    top: 3940px;
+    left: 45.5%;
+}
+
+#ann4 {
+    top: 4739px;
+    left: 64%;
+}
+
+#note4 {
+    top: 4723px;
+    left: 66%;
+}
+
+#ann5 {
+    top: 5385px;
+    left: 65.5%;
+}
+
+#note5 {
+    top: 5370px;
+    left: 67.5%;
+}
+
+#ann6 {
+    top: 5385px;
+    left: 67%;
+}
+
+#note6 {
+    top: 5370px;
+    left: 69%;
+}
+
+#resource {
+    height: 700px;
+    width: 90%;
+    margin-top: 200px;
+    margin-left: 5%;
+    background-color: #f8ebd9;
+    border-radius: 25px;
+    box-shadow: 10px 0px 10px grey;
+}
+
+#resource-title {
+    padding-top: 50px;
+    display: none;
+}
+
+#barrel-graph {
+    background: url(../img/barrel-graph.png) no-repeat;
+    width: 896px;
+    height: 126px;
+    margin-left: 10%;
+    margin-top: 100px;
+    z-index: 10;
+    display: none;
+}
+
+#blue-line {
+    border-top: 1px;
+    border-style: solid;
+    border-color: #313851;
+    width: 77%;
+    margin-top: 40px;
+    margin-left: 10%;
+    display: none;
+}
+
+#world-pet {
+    margin-left: 10%;
+    display: none;
+}
+
+#gold-line {
+    border-top: 1px;
+    border-style: solid;
+    border-color: #f99947;
+    width: 19.25%;
+    margin-top: 40px;
+    margin-left: 10%;
+    display: none;
+}
+
+#us-pet {
+    margin-left: 10%;
+    display: none;
+}
+
+#pink-line {
+    border-top: 1px;
+    border-style: solid;
+    border-color: #f7675c;
+    width: 2.42%;
+    margin-top: 40px;
+    margin-left: 10%;
+    display: none;
+}
+
+#car-pet {
+    margin-left: 10%;
+    display: none;
+}
+
+#consumption {
+    height: 700px;
+    width: 90%;
+    margin-top: 100px;
+    margin-left: 5%;
+    background-color: #f8ebd9;
+    border-radius: 25px;
+    box-shadow: 10px 0px 10px grey;
+}
+
+#consumption-title {
+    padding-top: 50px;
+    display: none;
+}
+
+
+#transPer {
+    background: url(../img/trans.png) no-repeat;
+    width: 1006px;
+    height: 306px;
+    position: absolute;
+    top: 4350px;
+    left: 400px;
+    z-index: 20;
+    opacity: 0;
+}
+
+#usPer {
+    color: #313851;
+    margin-top: 430px;
+    margin-left: 19%;
+    width: 60%;
+    display: none;
+}
+
+#mile {
+    height: 950px;
+    width: 90%;
+    margin-top: 100px;
+    margin-left: 5%;
+    background-color: #f8ebd9;
+    border-radius: 25px;
+    box-shadow: 10px 0px 10px grey;
+}
+
+#mile-title {
+    padding-top: 50px;
+    display: none;
+}
+
+#mileGraph {
+    background: url(../img/mileGraph.png) no-repeat;
+    width: 752px;
+    height: 526px;
+    position: absolute;
+    top: 5280px;
+    left: 300px;
+    z-index: 10;
+    display: none;
+}
+
+#mileGraphText {
+    color: #313851;
+    width: 500px;
+    margin-left: 47%;
+    margin-top: 190px;
+    text-align: left;
+    display: none;
+}
+
+#sun {
+    background: url(../img/sun.png) no-repeat;
+    width: 401px;
+    height: 415px;
+    position: absolute;
+    top: 5130px;
+    left: 120px;
+    display: none;
+}
+
+#carOG {
+    background: url(../img/carOnGraph.png) no-repeat;
+    width: 126px;
+    height: 60px;
+    position: absolute;
+    top: 5650px;
+    left: 810px;
+    -webkit-transform: rotate(20deg);
+}
+
+#calculation {
+    height: 850px;
+    width: 90%;
+    margin-top: 100px;
+    margin-left: 5%;
+    background-color: #f8ebd9;
+    border-radius: 25px;
+    box-shadow: 10px 0px 10px grey;
+}
+
+#calculation-title {
+    padding-top: 50px;
+    width: 65%;
+    margin-left: 16%;
+    color: #313851;
+    display: none;
+}
+
+#calculator {
+    background: url(../img/calculator.png) no-repeat;
+    width: 373px;
+    height: 540px;
+    position: absolute;
+    top: 6200px;
+    left: 450px;
+}
+
+
+#input-resource {
+    position: absolute;
+    top: 6220px;
+    left: 510px;
+    font-size: 1.8em;
+    display: none;
+}
+
+#input-divide {
+    position: absolute;
+    top: 6230px;
+    left: 740px;
+    display: none;
+}
+
+#input-rate {
+    position: absolute;
+    top: 6230px;
+    left: 510px;
+    font-size: 1.4em;
+    display: none;
+    color: #313851;
+}
+
+#input-year {
+    position: absolute;
+    top: 6230px;
+    left: 600px;
+    display: none;
+    color: #313851;
+}
+
+.input {
+    font-size: 1.4em;
+    font-family: 'Cantarell', sans-serif;
+    color: #313851;
+    background-color: #f3e6ca;
+    border-radius: 10px;
+    display: none;
+}
+
+#input1 {
+    width: 100px;
+    padding: 19px 12px;
+    position: absolute;
+    top: 6355px;
+    left: 495px;
+}
+
+#input2 {
+    width: 30px;
+    padding: 19px 14px;
+    position: absolute;
+    top: 6440px;
+    left: 652px;
+}
+
+#input3 {
+    width: 170px;
+    padding: 19px 14px;
+    position: absolute;
+    top: 6525px;
+    left: 580px;
+}
+
+#input4 {
+    background-color: #f7675c;
+    color: #f3e6ca;
+    width: 30px;
+    padding: 19px 14px;
+    position: absolute;
+    top: 6610px;
+    left: 731px;
+}
+
+#solution {
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 10%;
+    display: none;
+}
+
+
+
+#hybrid {
+    height: 750px;
+    width: 90%;
+    margin-top: 100px;
+    margin-left: 5%;
+    background-color: #f8ebd9;
+    border-radius: 25px;
+    box-shadow: 10px 0px 10px grey;
+}
+
+#hybrid-title {
+    padding-top: 80px;
+    width: 88%;
+    line-height: 1.6em;
+    text-align: left;
+    margin-left: 6%;
+}
+
+#panel {
+    background: url(../img/panel.png) no-repeat;
+    width: 455px;
+    height: 253px;
+    position: absolute;
+    top: 7500px;
+    left: 400px;
+}
+
+#stick {
+    background: url(../img/stick.png) no-repeat;
+    width: 237px;
+    height: 15px;
+    position: absolute;
+    top: 7685px;
+    left: 505px;
+}
+
+#gas-arrow {
+    background: url(../img/gas-arrow.png) no-repeat;
+    width: 150px;
+    height: 112px;
+    position: absolute;
+    top: 7400px;
+    left: 420px;
+}
+
+#gas-engine {
+    background: url(../img/gas-engine.png) no-repeat;
+    width: 199px;
+    height: 143px;
+    position: absolute;
+    top: 7600px;
+    left: -300px;
+}
+
+#gas-engine-text {
+    color: #313851;
+    font-size: 1.5em;
+    position: absolute;
+    top: 7730px;
+    left: 140px;
+}
+
+#hybrid-engine {
+    background: url(../img/hybird-engine.png) no-repeat;
+    width: 199px;
+    height: 143px;
+    position: absolute;
+    top: 7600px;
+    left: 1350px;
+}
+#hybrid-arrow {
+    background: url(../img/hybrid-arrow.png) no-repeat;
+    width: 125px;
+    height: 133px;
+    position: absolute;
+    top: 7500px;
+    left: 840px;
+}
+
+#hybrid-engine-text {
+    color: #313851;
+    font-size: 1.5em;
+    position: absolute;
+    top: 7730px;
+    left: 970px;
+}
+
+#electric {
+    height: 750px;
+    width: 90%;
+    margin-top: 100px;
+    margin-left: 5%;
+    background-color: #f8ebd9;
+    border-radius: 25px;
+    box-shadow: 10px 0px 10px grey;
+}
+
+#electric-title {
+    padding-top: 80px;
+    width: 50%;
+    line-height: 1.6em;
+    text-align: left;
+    margin-left: 6%;
+}
+
+#electric-car {
+    background: url(../img/electric-car.png) no-repeat;
+    width: 303px;
+    height: 220px;
+    position: absolute;
+    top: 8460px;
+    left: 700px;
+}
+
+#battery {
+    background: url(../img/battery.png) no-repeat;
+    width: 241px;
+    height: 525px;
+    position: absolute;
+    top: 8000px;
+    left: 860px;
+}
+
+#electric-text {
+    margin-left: 340px;
+    margin-top: 330px;
+}
+
+#public {
+    height: 770px;
+    width: 90%;
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-bottom: 100px;
+    background-color: #f8ebd9;
+    border-radius: 25px;
+    box-shadow: 10px 0px 10px grey;
+}
+
+#public-title{
+    padding-top: 80px;
+    width: 88%;
+    line-height: 1.6em;
+    text-align: left;
+    margin-left: 6%;
+}
+
+#busstop {
+    background: url(../img/busstop.png) no-repeat;
+    width: 144px;
+    height: 321px;
+    position: absolute;
+    top: 9150px;
+    left: 400px;
+}
+
+#bus {
+    background: url(../img/bus.png) no-repeat;
+    width: 336px;
+    height: 186px;
+    position: absolute;
+    top: 9300px;
+    left: 600px;
+}
+
+#human-power {
+    height: 770px;
+    width: 90%;
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-bottom: 100px;
+    background-color: #f8ebd9;
+    border-radius: 25px;
+    box-shadow: 10px 0px 10px grey;
+}
+
+#human-title {
+    padding-top: 80px;
+    width: 88%;
+    line-height: 1.6em;
+    text-align: left;
+    margin-left: 6%;
+}
+
+#hpv {
+    background: url(../img/hpv.png) no-repeat;
+    width: 433px;
+    height: 268px;
+    position: absolute;
+    top: 10100px;
+    left: 300px;
+}
+
+#back {
+    height: 30px;
+    width: 150px;
+    padding: 20px 50px;
+    margin-left: 40%;
+    margin-bottom: 100px;
+    background-color: #f8ebd9;
+    border-radius: 10px;
+    box-shadow: 10px 0px 10px grey;
+}
