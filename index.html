@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        <div id="description" class="parallax-window" data-parallax="scroll" data-image-src="img/cloud-background.png">
+        <div id="description" class="parallax-window" data-parallax="scroll">
             <ul id="stars" class="scene">
                 <li id="star7" class="layer" data-depth="0.10" data-depth-y="0.30"><img src="img/gold-star.png"></li>
                 <li id="star8" class="layer" data-depth="-0.20" data-depth-y="-0.40"><img src="img/gold-star.png"></li>
@@ -104,10 +104,9 @@
             </h4>
 
             <h4 id = "gas">
-                <div class ="emem">19 gallons</div>
+                <a href = "http://www.dnr.louisiana.gov/index.cfm?md=pagebuilder&tmp=home&pid=244" id = "ann1" class = "emem">19 gallons <small>[1]</small></a>
             </h4>
 
-            <a href = "http://www.dnr.louisiana.gov/index.cfm?md=pagebuilder&tmp=home&pid=244" class = "notation" id = "ann1">[1]</a>
             <h5 class = "note" id = "note1">Department of Natural Resources (n.d.) Where Does My Gasoline Come From?</h5>
         </div>
 
@@ -124,17 +123,13 @@
             <div id = "barrel-graph"></div>
 
             <div id = "blue-line"></div>
-            <h4 id = "world-pet"> World: <em>1,687.9 billion</em> barrels (100%) </h4>
+            <h4 id ="world-pet"><a href = "http://www.ibtimes.co.uk/world-energy-day-2014-how-much-oil-left-how-long-will-it-last-1471200" id = "ann2"> World: <em>1,687.9 billion</em> barrels (100%) <small>[2]</small> </a><h4>
             <div id = "gold-line"></div>
             <h4 id = "us-pet">US: <em>421.9 million</em> barrels (25%)</h4>
             <div id = "pink-line"></div>
-            <h4 id = "car-pet">Private Vehicle: <em>53.16 million</em> barrels (3.15%) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp = <em>1,010 million</em> gallons gasoline</h4>
+            <h4 id = "car-pet"><a href = "https://www.eia.gov/energyexplained/?page=us_energy_transportation" id = "ann3">Private Vehicle: <em>53.16 million</em> barrels (3.15%) <small>[3]</small> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp = <em>1,010 million</em> gallons gasoline</a></h4>
 
-
-                <a href = "http://www.ibtimes.co.uk/world-energy-day-2014-how-much-oil-left-how-long-will-it-last-1471200" class = "notation" id = "ann2">[2]</a>
                 <h5 class = "note" id = "note2">Stuff reporter (2016) How Much Oil is Left and How Long Will it Last? International Business Times.</h5>
-
-                <a href = "https://www.eia.gov/energyexplained/?page=us_energy_transportation" class = "notation" id = "ann3">[3]</a>
                 <h5 class = "note" id = "note3">US Energy Information Administration (2016) Transportation Sector Energy Consumption. eia.gov</h5>
         </div>
 
@@ -149,8 +144,7 @@
             </h3>
 
             <div id = "transPer"></div>
-            <h4 id = "usPer">Currently, there are approximately <em>123 million</em> commuters in the US and <em>86%</em> of the commuters travel by automobiles and <em>76.4%</em> of them drive alone. </h4>
-            <a href = "https://www.census.gov/hhes/commuting/files/2014/acs-32.pdf" class = "notation" id = "ann4">[4]</a>
+            <h4 id = "usPer"><a href = "https://www.census.gov/hhes/commuting/files/2014/acs-32.pdf" id = "ann4">Currently, there are approximately <em>123 million</em> commuters in the US and <em>86%</em> of the commuters travel by automobiles and <em>76.4%</em> of them drive alone. <small>[4]</small> </a></h4>
             <h5 class = "note" id = "note4">McKenzie B (2015) Who Drives to Work? Commuting by Automobile in the United States: 2013</h5>
         </div>
 
@@ -164,12 +158,11 @@
                 <div class = "emem">mpg</div>
             </h3>
             <div id = "mileGraph"></div>
-                <h3 id = "mileGraphText">To get to work, the average commuter travels approximately <em>15 miles</em> one way. And the average fuel effciency for US vehicles is <em>24.8mpg</em>.</h3>
+                <h3 id = "mileGraphText1"><a href = "https://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/omnistats/volume_03_issue_04/pdf/entire.pdf" id = "ann5">To get to work, the average commuter travels approximately <em>15 miles</em> one way. <small>[5]</small> </a></h3>
+                <h3 id = "mileGraphText2"><a href = "https://phys.org/news/2016-11-average-fuel-economy-high-mpg.html" id = "ann6"> And the average fuel effciency for US vehicles is <em>24.8mpg</em>. <small>[6]</small> </a></h3>
             <div id = "sun"></div>
             <div id = "carOG"></div>
-            <a href = "https://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/omnistats/volume_03_issue_04/pdf/entire.pdf" class = "notation" id = "ann5">[5]</a>
             <h5 class = "note" id = "note5">Bureau of Transportation (2003) OmniStats</h5>
-            <a href = "https://phys.org/news/2016-11-average-fuel-economy-high-mpg.html" class = "notation" id = "ann6">[6]</a>
             <h5 class = "note" id = "note6">Durbin D (2016) US average fuel economy at record high of 24.8 mpg</h5>
         </div>
 
@@ -185,6 +178,7 @@
             <div id = "input2" class = "input">÷</div>
             <div id = "input3" class = "input">Consume Rate</div>
             <div id = "input4" class = "input">=</div>
+            <div id = "click"></div>
         </div>
 
 
@@ -212,7 +206,7 @@
             <div id = "gas-engine"></div>
             <h3 id = "gas-engine-text">Gas Engine</h3>
             <div id = "hybrid-engine"></div>
-            <h3 id = "hybrid-engine-text">hybird Engine</h3>
+            <h3 id = "hybrid-engine-text">Hybird Engine</h3>
         </div>
 
         <div id = "electric">
@@ -252,15 +246,16 @@
                 <div class = "non">are under development but is a method for people to commute with</div>
                 <div class = "pink">great potential.</div>
                 <div class = "non">Bike is a kind of human-powered transportation. However, HPVs can do a lot faster utilizing</div>
-                <div class = "pink">fluid mechanics.</div>
-                <div class = "non">The fastest reached 85 mph!</div>
+                <div class = "pink">fluid mechanics</div>
+                <div class = "non">to minimize the air friction. The fastest human-powered vehicle can reach 85 mph!</div>
             </h3>
 
             <div id = "hpv"></div>
+            <div id = "fluid"></div>
 
         </div>
 
-        <h4 id = "back">^ Back To Top ^</h4>
+        <h4 id = "back"><a href = "https://kedajiang.github.io/commute/index.html">^ Back To Top ^</a></h4>
 
 
     </div>
@@ -338,7 +333,7 @@
 
         if (y > 3700) {
             $('#consumption-title').fadeIn('slow');
-            $('#transPer').animate({left: "130px", opacity: "1"}, 1000);
+            $('#transPer').animate({left: "11.5%", opacity: "1"}, 1000);
         }
 
         if (y > 4000) {
@@ -348,18 +343,20 @@
 
         if (y > 4500) {
             $('#mile-title').fadeIn();
-            $('#sun').fadeIn();
+
         }
 
         if (y > 4700) {
             $('#mileGraph').fadeIn();
-            $('#mileGraphText').fadeIn();
+            $('#mileGraphText1').fadeIn();
+            $('#mileGraphText2').fadeIn();
             $('#ann5').fadeIn();
             $('#ann6').fadeIn();
+            $('#sun').fadeIn();
         }
 
         if (y > 4900) {
-            $('#carOG').animate({left: "735px", top: "5620px"}, 1000);
+            $('#carOG').fadeIn().animate({marginTop: "130px", left: "710px"}, 1000);
         }
 
         if (y > 5300) {
@@ -377,21 +374,94 @@
         }
 
 
-        if (y > 6900) {
-            $('#gas-engine').animate({left: "100px"}, 1000);
-            $('#hybrid-engine').animate({left: "950px"}, 1000);
+        if (y > 6600) {
+            $('#hybrid-title').fadeIn();
+
+        }
+
+        if (y > 6800) {
+            $('#panel').fadeIn();
+            $('#stick').fadeIn();
+        }
+
+        if (y > 7000) {
+            $('#gas-engine').animate({left: "12%"}, 1000);
+            $('#hybrid-engine').animate({left: "72%"}, 1000);
+            $('#gas-engine-text').animate({left: "15%"}, 1000);
+            $('#hybrid-engine-text').animate({left: "74%"}, 1000);
+        }
+
+        if (y > 7500) {
+            $('#electric-title').fadeIn();
+        }
+
+        if (y > 7800) {
+            $('#electric-car').animate({left: "52%"}, 1000);
+            $('#battery').delay(500).fadeIn();
+            $('#battery').animate({marginTop: "-350px"}, 500);
+            $('#electric-text').delay(500).fadeIn().animate({left: "30%"}, 500);
+        }
+
+        if (y > 8300) {
+            $('#public-title').fadeIn();
+        }
+
+        if (y > 8700) {
+            $('#busstop').fadeIn();
+            $('#bus').fadeIn();
+        }
+
+        if (y > 9200) {
+            $('#human-title').fadeIn();
+        }
+
+        if (y > 9500) {
+            $('#hpv').fadeIn();
+            $('#fluid').fadeIn();
         }
 
 
 
     });
 
+    $('#input1').mouseover(function() {
+        $('#input1').css("color", "#f99947");
+    });
+
+    $('#input1').mouseleave(function() {
+        $('#input1').css("color", "#313851");
+    });
+
+    $('#input2').mouseover(function() {
+        $('#input2').css("color", "#f99947");
+    });
+
+    $('#input2').mouseleave(function() {
+        $('#input2').css("color", "#313851");
+    });
+
+    $('#input3').mouseover(function() {
+        $('#input3').css("color", "#f99947");
+    });
+
+    $('#input3').mouseleave(function() {
+        $('#input3').css("color", "#313851");
+    });
+
+    $('#input4').mouseover(function() {
+        $('#input4').css("color", "#f99947");
+    });
+
+    $('#input4').mouseleave(function() {
+        $('#input4').css("color", "#313851");
+    });
 
     $('#input1').click(function(){
         $('#input-resource').fadeIn();
         $('#input-divide').fadeOut();
         $('#input-rate').fadeOut();
         $('#input-year').fadeOut();
+        $('#click').fadeOut();
     });
 
     $('#input2').click(function(){
@@ -399,6 +469,7 @@
         $('#input-divide').fadeIn();
         $('#input-rate').fadeOut();
         $('#input-year').fadeOut();
+        $('#click').fadeOut();
     });
 
     $('#input3').click(function(){
@@ -406,6 +477,7 @@
         $('#input-divide').fadeOut();
         $('#input-rate').fadeIn();
         $('#input-year').fadeOut();
+        $('#click').fadeOut();
     });
 
     $('#input4').click(function(){
@@ -413,6 +485,7 @@
         $('#input-divide').fadeOut();
         $('#input-rate').fadeOut();
         $('#input-year').fadeIn();
+        $('#click').fadeOut();
     });
 
 
@@ -436,24 +509,32 @@
         $("#stick").animateRotate(80, 500, "linear", function() {
             console.log(this);
         });
+        $("#gas-arrow").fadeIn();
+        $("#gas-engine-text").css("color", "#f7675c");
     });
 
     $("#hybrid-engine").mouseover(function(){
         $("#stick").animateRotate(170, 500, "linear", function() {
             console.log(this);
         });
+        $("#hybrid-arrow").fadeIn();
+        $("#hybrid-engine-text").css("color", "#f99947");
     });
 
     $("#hybrid-engine").mouseleave(function(){
         $("#stick").animateRotate(0, 500, "linear", function() {
             console.log(this);
         });
+        $("#hybrid-arrow").fadeOut();
+        $("#hybrid-engine-text").css("color", "#313851");
     });
 
     $("#gas-engine").mouseleave(function(){
         $("#stick").animateRotate(0, 500, "linear", function() {
             console.log(this);
         });
+        $("#gas-arrow").fadeOut();
+        $("#gas-engine-text").css("color", "#313851");
     });
 
 
