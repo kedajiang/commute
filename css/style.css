@@ -92,6 +92,21 @@ h6 {
     color: #f3e6ca;
 }
 
+small {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 12px;
+    color: #313851;
+    z-index: 30;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
 #container {
     width: auto;
     position: relative;
@@ -297,7 +312,7 @@ h6 {
     height: 45px;
     position: absolute;
     left: 50%;
-    top: 2100px;
+    margin-top: 600px;
     -webkit-animation: arrow_bounce 2.5s linear infinite;
     display: none;
 }
@@ -306,7 +321,7 @@ h6 {
     color: #f3e6ca;
     position: absolute;
     left: 40%;
-    top: 2010px;
+    margin-top: 550px;
     font-size: 1.5em;
     font-weight: 200;
     display: none;
@@ -331,16 +346,16 @@ h6 {
     width: 194px;
     height: 246px;
     position: absolute;
-    top: 2700px;
-    left: 200px;
+    margin-top: 100px;
+    left: 15%;
     z-index: 10;
     display: none;
 }
 
 @-webkit-keyframes arrow_move {
-    0% {-webkit-transform: translateX(0);}
-    50% {-webkit-transform: translateX(+10px);}
-    100% {-webkit-transform: translateX(0);}
+    0% {left: 35%;}
+    50% {left: 36%;}
+    100% {left: 35%;}
 }
 
 #extract-arrow {
@@ -348,8 +363,8 @@ h6 {
     width: 140px;
     height: 73px;
     position: absolute;
-    top: 2800px;
-    left: 450px;
+    margin-top: 180px;
+    left: 35%;
     z-index: 10;
     display: none;
     -webkit-animation: arrow_move 2.5s easein infinite;
@@ -360,8 +375,8 @@ h6 {
     width: 139px;
     height: 151px;
     position: absolute;
-    top: 2790px;
-    left: 700px;
+    margin-top: 190px;
+    left: 53%;
     z-index: 10;
     display: none;
 }
@@ -371,8 +386,8 @@ h6 {
     width: 442px;
     height: 316px;
     position: absolute;
-    top: 2630px;
-    left: 700px;
+    margin-top: 30px;
+    left: 53%;
     z-index: 10;
     display: none;
 }
@@ -382,7 +397,7 @@ h6 {
     width: 280px;
     height: 137px;
     position: absolute;
-    top: 3200px;
+    margin-top: 30px;
     left: 800px;
     z-index: 10;
     display: none;
@@ -390,15 +405,15 @@ h6 {
 
 #cru {
     position: absolute;
-    top: 2970px;
-    left: 210px;
+    margin-top: 370px;
+    left: 15%;
     display: none;
 }
 
 #gas {
     position: absolute;
-    top: 2970px;
-    left: 690px;
+    margin-top: 370px;
+    left: 51%;
     display: none;
 }
 
@@ -422,62 +437,35 @@ h6 {
     color: #f3e6ca;
 }
 
-#ann1 {
-    top: 2990px;
-    left: 62%;
-}
 
 #note1 {
-    top: 2965px;
-    left: 64%;
-}
-
-#ann2 {
-    top: 3775px;
-    left: 38%;
+    margin-top: 380px;
+    left: 65%;
 }
 
 #note2 {
-    top: 3750px;
-    left: 40%;
-}
-#ann3 {
-    top: 3965px;
-    left: 43.5%;
+    margin-top: -250px;
+    left: 41%;
 }
 
 #note3 {
-    top: 3940px;
-    left: 45.5%;
-}
-
-#ann4 {
-    top: 4739px;
-    left: 64%;
+    margin-top: -60px;
+    left: 46.5%;
 }
 
 #note4 {
-    top: 4723px;
-    left: 66%;
-}
-
-#ann5 {
-    top: 5385px;
-    left: 65.5%;
+    margin-top: -60px;
+    left: 70%;
 }
 
 #note5 {
-    top: 5370px;
-    left: 67.5%;
+    margin-top: -130px;
+    left: 85%;
 }
 
-#ann6 {
-    top: 5385px;
-    left: 67%;
-}
 
 #note6 {
-    top: 5370px;
+    margin-top: -100px;
     left: 69%;
 }
 
@@ -572,8 +560,8 @@ h6 {
     width: 1006px;
     height: 306px;
     position: absolute;
-    top: 4350px;
-    left: 400px;
+    margin-top: 50px;
+    left: 32%;
     z-index: 20;
     opacity: 0;
 }
@@ -606,17 +594,24 @@ h6 {
     width: 752px;
     height: 526px;
     position: absolute;
-    top: 5280px;
+    margin-top: 170px;
     left: 300px;
     z-index: 10;
     display: none;
 }
 
-#mileGraphText {
+#mileGraphText1 {
+    color: #313851;
+    width: 520px;
+    margin-left: 47%;
+    margin-top: 190px;
+    text-align: left;
+    display: none;
+}
+#mileGraphText2 {
     color: #313851;
     width: 500px;
     margin-left: 47%;
-    margin-top: 190px;
     text-align: left;
     display: none;
 }
@@ -626,8 +621,8 @@ h6 {
     width: 401px;
     height: 415px;
     position: absolute;
-    top: 5130px;
-    left: 120px;
+    margin-top: -330px;
+    left: 10%;
     display: none;
 }
 
@@ -636,9 +631,10 @@ h6 {
     width: 126px;
     height: 60px;
     position: absolute;
-    top: 5650px;
+    margin-top: 165px;
     left: 810px;
     -webkit-transform: rotate(20deg);
+    display: none;
 }
 
 #calculation {
@@ -664,14 +660,14 @@ h6 {
     width: 373px;
     height: 540px;
     position: absolute;
-    top: 6200px;
+    margin-top: 42px;
     left: 450px;
 }
 
 
 #input-resource {
     position: absolute;
-    top: 6220px;
+    margin-top: 100px;
     left: 510px;
     font-size: 1.8em;
     display: none;
@@ -679,14 +675,14 @@ h6 {
 
 #input-divide {
     position: absolute;
-    top: 6230px;
+    margin-top: 110px;
     left: 740px;
     display: none;
 }
 
 #input-rate {
     position: absolute;
-    top: 6230px;
+    margin-top: 110px;
     left: 510px;
     font-size: 1.4em;
     display: none;
@@ -695,7 +691,7 @@ h6 {
 
 #input-year {
     position: absolute;
-    top: 6230px;
+    margin-top: 110px;
     left: 600px;
     display: none;
     color: #313851;
@@ -714,7 +710,7 @@ h6 {
     width: 100px;
     padding: 19px 12px;
     position: absolute;
-    top: 6355px;
+    margin-top: 197px;
     left: 495px;
 }
 
@@ -722,7 +718,7 @@ h6 {
     width: 30px;
     padding: 19px 14px;
     position: absolute;
-    top: 6440px;
+    margin-top: 282px;
     left: 652px;
 }
 
@@ -730,7 +726,7 @@ h6 {
     width: 170px;
     padding: 19px 14px;
     position: absolute;
-    top: 6525px;
+    margin-top: 367px;
     left: 580px;
 }
 
@@ -740,8 +736,17 @@ h6 {
     width: 30px;
     padding: 19px 14px;
     position: absolute;
-    top: 6610px;
+    margin-top: 452px;
     left: 731px;
+}
+
+#click {
+    background: url(../img/click.png) no-repeat;
+    width: 112px;
+    height: 123px;
+    position: absolute;
+    margin-top: 100px;
+    left: 300px;
 }
 
 #solution {
@@ -769,6 +774,7 @@ h6 {
     line-height: 1.6em;
     text-align: left;
     margin-left: 6%;
+    display: none;
 }
 
 #panel {
@@ -776,8 +782,9 @@ h6 {
     width: 455px;
     height: 253px;
     position: absolute;
-    top: 7500px;
-    left: 400px;
+    margin-top: 100px;
+    left: 32%;
+    display: none;
 }
 
 #stick {
@@ -785,8 +792,9 @@ h6 {
     width: 237px;
     height: 15px;
     position: absolute;
-    top: 7685px;
-    left: 505px;
+    margin-top: 285px;
+    left: 40%;
+    display: none;
 }
 
 #gas-arrow {
@@ -794,8 +802,9 @@ h6 {
     width: 150px;
     height: 112px;
     position: absolute;
-    top: 7400px;
-    left: 420px;
+    margin-top: 0px;
+    left: 35%;
+    display: none;
 }
 
 #gas-engine {
@@ -803,7 +812,7 @@ h6 {
     width: 199px;
     height: 143px;
     position: absolute;
-    top: 7600px;
+    margin-top: 200px;
     left: -300px;
 }
 
@@ -811,8 +820,8 @@ h6 {
     color: #313851;
     font-size: 1.5em;
     position: absolute;
-    top: 7730px;
-    left: 140px;
+    margin-top: 360px;
+    left: 0%;
 }
 
 #hybrid-engine {
@@ -820,7 +829,7 @@ h6 {
     width: 199px;
     height: 143px;
     position: absolute;
-    top: 7600px;
+    margin-top: 200px;
     left: 1350px;
 }
 #hybrid-arrow {
@@ -828,16 +837,18 @@ h6 {
     width: 125px;
     height: 133px;
     position: absolute;
-    top: 7500px;
-    left: 840px;
+    margin-top: 100px;
+    left: 66%;
+    display: none;
 }
 
 #hybrid-engine-text {
     color: #313851;
     font-size: 1.5em;
     position: absolute;
-    top: 7730px;
-    left: 970px;
+    margin-top: 360px;
+    left: 85%;
+
 }
 
 #electric {
@@ -856,6 +867,7 @@ h6 {
     line-height: 1.6em;
     text-align: left;
     margin-left: 6%;
+    display: none;
 }
 
 #electric-car {
@@ -863,8 +875,8 @@ h6 {
     width: 303px;
     height: 220px;
     position: absolute;
-    top: 8460px;
-    left: 700px;
+    margin-top: 130px;
+    left: 80%;
 }
 
 #battery {
@@ -872,13 +884,16 @@ h6 {
     width: 241px;
     height: 525px;
     position: absolute;
-    top: 8000px;
-    left: 860px;
+    margin-top: -650px;
+    left: 65%;
+    display: none;
 }
 
 #electric-text {
-    margin-left: 340px;
-    margin-top: 330px;
+    position: absolute;
+    left: 0%;
+    margin-top: 270px;
+    display: none;
 }
 
 #public {
@@ -898,6 +913,7 @@ h6 {
     line-height: 1.6em;
     text-align: left;
     margin-left: 6%;
+    display: none;
 }
 
 #busstop {
@@ -905,8 +921,16 @@ h6 {
     width: 144px;
     height: 321px;
     position: absolute;
-    top: 9150px;
-    left: 400px;
+    margin-top: 30px;
+    left: 30%;
+    display: none;
+}
+
+@-webkit-keyframes bus_move {
+    0% {left: 1500px;}
+    30% {left: 600px;}
+    50% {left: 600px;}
+    100% {left: -1000px;}
 }
 
 #bus {
@@ -914,8 +938,9 @@ h6 {
     width: 336px;
     height: 186px;
     position: absolute;
-    top: 9300px;
-    left: 600px;
+    margin-top: 170px;
+    -webkit-animation: bus_move 7s ease-in infinite;
+    display: none;
 }
 
 #human-power {
@@ -935,6 +960,15 @@ h6 {
     line-height: 1.6em;
     text-align: left;
     margin-left: 6%;
+    display: none;
+}
+
+@-webkit-keyframes hpv_move {
+    0% {-webkit-transform: translateX(0px);}
+    30% {-webkit-transform: translateX(200px);}
+    50% {-webkit-transform: translateX(130px);}
+    70% {-webkit-transform: translateX(170px);}
+    100% {-webkit-transform: translateX(0px);}
 }
 
 #hpv {
@@ -942,8 +976,21 @@ h6 {
     width: 433px;
     height: 268px;
     position: absolute;
-    top: 10100px;
+    margin-top: 100px;
     left: 300px;
+    -webkit-animation: hpv_move 5s ease-in infinite;
+    display: none;
+}
+
+#fluid {
+    background: url(../img/fluid.gif) no-repeat;
+    width: 741px;
+    height: 441px;
+    position: absolute;
+    margin-top: 10px;
+    left: 165px;
+    -webkit-animation: hpv_move 5s ease-in infinite;
+    display: none;
 }
 
 #back {
