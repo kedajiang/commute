@@ -249,7 +249,7 @@ a:visited {
 }
 #star6{
     padding-left: 12%;
-    padding-top: 660px;
+    padding-top: 760px;
 }
 
 
@@ -1012,7 +1012,7 @@ a:visited {
     opacity: 0;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) and (min-width: 601px) {
     #container {
         height: 100%;
     }
@@ -1059,6 +1059,49 @@ a:visited {
 }
 
 @media screen and (max-width: 600px) {
+
+    #container {
+        height: 100%;
+    }
+    #title {
+        opacity: 0;
+    }
+    #subtitle {
+        opacity: 0;
+    }
+    #arrow {
+        opacity: 0;
+    }
+    #earth {
+        opacity: 0;
+    }
+
+    #shadowOnEarth {
+        opacity: 0;
+    }
+
+    #shadow{
+        opacity: 0;
+    }
+
+    #car {
+        opacity: 0;
+    }
+    #hint {
+        opacity: 0;
+    }
+
+    #media {
+        color: #313851;
+        font-size: 2em;
+        opacity: 100;
+        position: absolute;
+        text-align: center;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
     #cloud1 {
         padding-top: 25%;
