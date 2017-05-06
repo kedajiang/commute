@@ -1098,54 +1098,9 @@ a:visited {
         position: absolute;
         text-align: center;
         width: 50%;
-        top: 50%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-
-    #cloud1 {
-        padding-top: 120px;
-    }
-
-    #cloud2 {
-        padding-top: 60px;
-    }
-
-    #cloud3 {
-        padding-top: 380px;
-    }
-
-    #planet1 {
-        padding-top: 400px;
-    }
-
-    #planet2 {
-        padding-top: 100px;
-    }
-
-    #star1 {
-        padding-top: 250px;
-    }
-
-    #star2 {
-        padding-top: 80px;
-    }
-
-    #star3 {
-        padding-top: 60px;
-    }
-
-    #star4 {
-        padding-top: 320px;
-    }
-
-    #star5 {
-        padding-top: 280px;
-    }
-
-    #star6 {
-        padding-top: 400px;
-
     }
 
 
