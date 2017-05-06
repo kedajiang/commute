@@ -1104,47 +1104,47 @@ a:visited {
     }
 
     #cloud1 {
-        padding-top: 25%;
+        padding-top: 50%;
     }
 
     #cloud2 {
-        padding-top: 15%;
-    }
-
-    #cloud3 {
-        padding-top: 85%;
-    }
-
-    #planet1 {
-        padding-top: 75%;
-    }
-
-    #planet2 {
         padding-top: 30%;
     }
 
-    #star1 {
-        padding-top: 75%;
+    #cloud3 {
+        padding-top: 170%;
     }
 
-    #star2 {
-        padding-top: 15%;
+    #planet1 {
+        padding-top: 150%;
     }
 
-    #star3 {
-        padding-top: 35%;
-    }
-
-    #star4 {
-        padding-top: 80%;
-    }
-
-    #star5 {
+    #planet2 {
         padding-top: 60%;
     }
 
+    #star1 {
+        padding-top: 150%;
+    }
+
+    #star2 {
+        padding-top: 30%;
+    }
+
+    #star3 {
+        padding-top: 70%;
+    }
+
+    #star4 {
+        padding-top: 160%;
+    }
+
+    #star5 {
+        padding-top: 120%;
+    }
+
     #star6 {
-        padding-top: 90%;
+        padding-top: 180%;
 
     }
 
