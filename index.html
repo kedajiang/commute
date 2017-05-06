@@ -12,14 +12,18 @@
     <script type="text/javascript" src="js/parallax.js"></script>
 
 
-    <title>Thesis</title>
+    <title>Commute</title>
 
 </head>
 
 <body>
     <div id="container">
 
+
         <div id="home">
+            <div id = "media">
+                <h2 id = "media-title">Please <em>widen up</em> your browser to view the full content!<h2>
+            </div>
             <div id="earth"></div>
             <div id="shadowOnEarth"></div>
             <div id="shadow"></div>
@@ -43,6 +47,8 @@
 
                 </ul>
             </div>
+            <h3 id="hint">Scroll down to check out</h3>
+            <div id="arrow"></div>
         </div>
 
         <div id="description" class="parallax-window" data-parallax="scroll">
@@ -82,8 +88,7 @@
                 <div class="em">deficit of energy</div>
                 <div>.</div>
             </h3>
-            <h3 id="hint">Scroll down to check out</h3>
-            <div id="arrow"></div>
+
 
         </div>
 
@@ -272,26 +277,27 @@
 	var parallax = new Parallax(scene);
     var parallax = new Parallax(stars);
 
+    $(document).ready(function(){
+        $('#earth').hide().delay(100).fadeIn('slow');
+        $('#shadowOnEarth').hide().delay(200).fadeIn('slow');
+        $('#shadow').hide().delay(200).fadeIn('slow');
+        $('#car').hide().delay(400).fadeIn('slow');
+        $('#title').hide().delay(1000).fadeIn('slow');
+        $('#subtitle').hide().delay(1000).fadeIn('slow');
+        $('#move').hide().delay(1000).fadeIn('slow');
+        $('#arrow').hide().delay(2000).fadeIn('slow');
+        $('#hint').hide().delay(2000).fadeIn('slow');
+    })
+
     $(document).scroll(function() {
         var y = $(this).scrollTop();
-        if (y > 0) {
-            $('#earth').fadeIn('slow');
-            $('#shadowOnEarth').fadeIn('slow');
-            $('#shadow').fadeIn('slow');
-            $('#car').fadeIn('slow');
-            $('#title').fadeIn('slow');
-            $('#move').fadeIn('slow');
-        }
+
 
         if (y > 500) {
             $('#para1').fadeIn('slow');
         }
         if (y > 1000) {
             $('#para2').fadeIn('slow');
-        }
-        if (y > 1500) {
-            $('#arrow').fadeIn('slow');
-            $('#hint').fadeIn('slow');
         }
         if (y > 1800) {
             $('#energy-title').fadeIn('slow');
